@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/enghan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ENGLISH -> HANZI"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/engpin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ENGLISH -> PINYIN"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/haneng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HANZI -> ENGLISH"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/hanpin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HANZI -> PINYIN"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/pineng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PINYIN -> ENGLISH"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/pinhan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PINYIN -> HANZI"
+        android:textSize="20dp" />
+
+</LinearLayout>

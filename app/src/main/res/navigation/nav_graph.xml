@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.spitslide.chinesecharacters.ui.MainFragment"
+        android:label="MainFragment"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_hskFragment"
+            app:destination="@id/hskFragment"
+            app:enterAnim="@anim/anim_enter"
+            app:exitAnim="@anim/anim_exit"
+            app:popEnterAnim="@anim/anim_pop_enter"
+            app:popExitAnim="@anim/anim_pop_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/languageFragment"
+        android:name="com.spitslide.chinesecharacters.ui.LanguageFragment"
+        android:label="LanguageFragment"
+        tools:layout="@layout/fragment_language">
+        <action
+            android:id="@+id/action_languageFragment_to_batchesFragment"
+            app:destination="@id/batchesFragment"
+            app:enterAnim="@anim/anim_enter"
+            app:exitAnim="@anim/anim_exit"
+            app:popEnterAnim="@anim/anim_pop_enter"
+            app:popExitAnim="@anim/anim_pop_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/hskFragment"
+        android:name="com.spitslide.chinesecharacters.ui.HskFragment"
+        android:label="HskFragment"
+        tools:layout="@layout/fragment_hsk">
+        <action
+            android:id="@+id/action_hskFragment_to_languageFragment"
+            app:destination="@id/languageFragment"
+            app:enterAnim="@anim/anim_enter"
+            app:exitAnim="@anim/anim_exit"
+            app:popEnterAnim="@anim/anim_pop_enter"
+            app:popExitAnim="@anim/anim_pop_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/batchesFragment"
+        android:name="com.spitslide.chinesecharacters.ui.BatchesFragment"
+        android:label="BatchesFragment"
+        tools:layout="@layout/fragment_batches">
+        <action
+            android:id="@+id/action_batchesFragment_to_exerciseFragment"
+            app:destination="@id/exerciseFragment"
+            app:enterAnim="@anim/anim_enter"
+            app:exitAnim="@anim/anim_exit"
+            app:popEnterAnim="@anim/anim_pop_enter"
+            app:popExitAnim="@anim/anim_pop_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/exerciseFragment"
+        android:name="com.spitslide.chinesecharacters.ui.ExerciseFragment"
+        android:label="ExerciseFragment"
+        tools:layout="@layout/fragment_exercise" />
+</navigation>
